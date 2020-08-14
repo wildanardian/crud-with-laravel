@@ -29,3 +29,7 @@ Route::get('/employe/{employe_id}/edit', 'EmployeController@edit');
 Route::put('/employe/{employe_id}', 'EmployeController@update');
 Route::delete('/employe/{employe_id}', 'EmployeController@destroy');
 Route::get('/employe/search', 'EmployeController@search');
+
+Route::get('/star', function(){
+    return view('star');
+});
